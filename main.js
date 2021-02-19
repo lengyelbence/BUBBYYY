@@ -41,8 +41,6 @@ client.on('message', message =>{
         client.commands.get('generalhelp').execute(message, args, Discord);
     } else if (command === 'musichelp') {
         client.commands.get('musichelp').execute(message, args, Discord);
-    } else if (command === 'kick') {
-        client.commands.get('kick').execute(message, args);
     }
 
    
