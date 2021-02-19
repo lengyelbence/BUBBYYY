@@ -3,14 +3,14 @@ const ytSearch = require('yt-search');
  
 module.exports = {
     name: 'play',
-    description: 'Csatlakozz és játssz le videókat a YouTube-ról.',
+    description: 'Join and play videos from YouTube.',
     async execute(message, args) {
         const voiceChannel = message.member.voice.channel;
  
-        if (!voiceChannel) return message.channel.send('Ahhoz, hogy használd ezt a parancsot, csatlakoznod kell egy hangszobába!');
+        if (!voiceChannel) return message.channel.send('To use this command, you must join a sound room!');
         const permissions = voiceChannel.permissionsFor(message.client.user);
-        if (!permissions.has('CONNECT')) return message.channel.send('Nincs engedélyed a parancs használatára.');
-        if (!permissions.has('SPEAK')) return message.channel.send('Nincs engedélyed a parancs használatára.');
+        if (!permissions.has('CONNECT')) return message.channel.send('You do not have permission to use this command.');
+        if (!permissions.has('SPEAK')) return message.channel.send('You do not have permission to use this command.');
         if (!args.length) return message.channel.send('You need to send the second argument!');
  
         const validURL = (str) =>{
@@ -29,11 +29,10 @@ module.exports = {
  
             connection.play(stream, {seek: 0, volume: 1})
             .on('finish', () =>{
-                voiceChannel.leave();
-                message.channel.send('leaving channel');
+                message.channel.send('***The song has ended.***');
             });
  
-            await message.reply(`:thumbsup: Lejátszás alatt ***Your Link!***`)
+            await message.reply(`:thumbsup: Playing: ***your link***`)
  
             return
         }
@@ -57,9 +56,9 @@ module.exports = {
                 voiceChannel.leave();
             });
  
-            await message.reply(`:thumbsup: Lejátszás alatt ***${video.title}***`)
+            await message.reply(`:thumbsup: Playing: ***${video.title}***`)
         } else {
-            message.channel.send('Ez a videó nem található.');
+            message.channel.send('This video could not be found.');
         }
     }
 }
