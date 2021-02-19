@@ -9,7 +9,6 @@ module.exports = {
         .addFields(
             {name: 'Name', value: 'Bubby'},
             {name: 'Owner', value: 'Bencee#7253'},
-            {name: 'Online', value: `${client.guild.cache.size}`},
             {name: 'Prefix', value: 'b!'},
             {name: 'Help', value: 'b!help'},
         )
