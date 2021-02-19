@@ -11,7 +11,7 @@ module.exports = {
             {name: 'Owner', value: 'Bencee#7253'},
             {name: 'Prefix', value: 'b!'},
             {name: 'Help', value: 'b!help'},
-            {name: 'Servers', value: `${client.guilds.cache.size}`}
+            {name: 'Servers', value: `${client.guilds.cache.size}` 'servers.'}
         )
         .setFooter('Bot created by: Bencee#7253');
 
