@@ -36,7 +36,7 @@ client.on('message', message =>{
     } else if (command === 'leave') {
         client.commands.get('leave').execute(message, args);
     } else if (message.content === `serverinfo`) {
-        message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}\nOwner: ${message.guild.owner}`);
+        message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}\nOwner: ${message.guild.owner}\nRoles: ${message.guild.roleCount}\nRegion: ${message.guild.region}`);
     }
 
    
