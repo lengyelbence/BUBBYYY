@@ -19,7 +19,7 @@ for(const file of commandFiles){
 
 client.once('ready', () => {
     console.log('Bubby is online!');
-    client.user.setActivity(`Use "help" to get commands.`, {type: "PLAYING"}); 
+    client.user.setActivity(`b!help <- to get help.`, {type: "PLAYING"}); 
 });
 
 client.on('message', message =>{
