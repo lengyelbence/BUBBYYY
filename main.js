@@ -36,10 +36,6 @@ client.on('message', message =>{
     } else if (command === 'leave') {
         client.commands.get('leave').execute(message, args);
     }
-    
-    if (command === 'serverinfo') {
-        client.commands.get('serverinfo').execute(message, args);
-    }
    
 });
 
