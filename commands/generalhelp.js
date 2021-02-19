@@ -1,14 +1,13 @@
 module.exports = {
-    name: 'help',
+    name: 'generalhelp',
     description: "All the help you may need.",
     execute(message, args, Discord) {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#FFD7E4')
-        .setTitle('Help')
+        .setTitle('General Help')
         .setDescription('All the help you may need.')
         .addFields(
-            {name: 'General', value: 'Type: generalhelp'},
-            {name: 'Music', value: 'Type: musichelp'},
+            {name: 'Serverinfo', value: 'Type: serverinfo'},
         )
         .setFooter('Bot created by: Bencee#7253');
 
