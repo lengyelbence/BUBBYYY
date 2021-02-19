@@ -37,6 +37,10 @@ client.on('message', message =>{
         client.commands.get('leave').execute(message, args);
     } else if (command === 'serverinfo') {
         client.commands.get('serverinfo').execute(message, args, Discord);
+    } else if (command === 'generalhelp') {
+        client.commands.get('generalhelp').execute(message, args, Discord);
+    } else if (command === 'musichelp') {
+        client.commands.get('musichelp').execute(message, args, Discord);
     }
 
    
