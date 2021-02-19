@@ -35,7 +35,9 @@ client.on('message', message =>{
         client.commands.get('play').execute(message, args);
     } else if (command === 'leave') {
         client.commands.get('leave').execute(message, args);
-    } 
+    } else if (command === 'serverinfo') {
+        client.commands.get('serverinfo').execute(message, args, Discord);
+    }
 
    
 });
