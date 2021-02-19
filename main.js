@@ -19,6 +19,7 @@ for(const file of commandFiles){
 
 client.once('ready', () => {
     console.log('Bubby is online!');
+    client.user.setActivity(`Use ***help*** to get commands.`, {type: "playing"}); 
 });
 
 client.on('message', message =>{
@@ -34,7 +35,7 @@ client.on('message', message =>{
         client.commands.get('play').execute(message, args);
     } else if (command === 'leave') {
         client.commands.get('leave').execute(message, args);
-    }
+    } 
    
 });
 
