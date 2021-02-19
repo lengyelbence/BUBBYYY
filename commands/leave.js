@@ -1,12 +1,12 @@
 module.exports = {
     name: 'leave',
-    description: 'Állítsd le a lejátszást és a bot kilép.',
+    description: '',
     async execute(message, args) {
         const voiceChannel = message.member.voice.channel;
  
-        if(!voiceChannel) return message.channel.send("Ahhoz, hogy használd ezt a parancsot, csatlakoznod kell egy hangszobába!");
+        if(!voiceChannel) return message.channel.send("To use this command, you must join a sound room!");
         await voiceChannel.leave();
-        await message.channel.send('Hangcsatorna elhagyása :smiling_face_with_tear:')
+        await message.channel.send('Leaving audio channel... :pleading_face:')
  
     }
 }
