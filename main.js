@@ -41,6 +41,8 @@ client.on('message', message =>{
         client.commands.get('generalhelp').execute(message, args, Discord);
     } else if (command === 'musichelp') {
         client.commands.get('musichelp').execute(message, args, Discord);
+    } else if (command === 'botinfo') {
+        client.commands.get('botinfo').execute(message, args, Discord);
     } 
 
    
