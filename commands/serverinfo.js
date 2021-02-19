@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-exports.run = (client, message) => {
+module.exports = (client, message) => {
   const embed = new Discord.RichEmbed()
   .setAuthor(message.guild.name, message.guild.iconURL)
   .setColor('#FFD7E4')
