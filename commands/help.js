@@ -4,15 +4,13 @@ module.exports = {
     execute(message, args, Discord) {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#FFD7E4')
-        .setTitle('Segítség')
-        .setDescription('Minden, ami kellhet, itt van.')
+        .setTitle('Help')
+        .setDescription('Music')
         .addFields(
-            {name: 'Első segítség', value: 'ASD'},
-            {name: 'Második segítség', value: 'aASD'},
-            {name: 'Harmadik segítség', value: 'dASD'},
-            {name: 'Negyedik segítség', value: 'ASD'}
+            {name: 'Play', value: 'Command: play song name or link'},
+            {name: 'Leave', value: 'Command: leave'},
         )
-        .setFooter('ASDASDASDASD');
+        .setFooter('Note: Bubby doesn’t quit when the music is over, she just sends a message.');
 
         message.channel.send(newEmbed);
     }
