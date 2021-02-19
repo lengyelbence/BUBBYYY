@@ -41,14 +41,9 @@ client.on('message', message =>{
         client.commands.get('generalhelp').execute(message, args, Discord);
     } else if (command === 'musichelp') {
         client.commands.get('musichelp').execute(message, args, Discord);
-    } else if (command === 'botinfo') {
-		return message.channel.send(`Server count: ${client.guilds.cache.size}`);
+    } else if (command === 'servers') {
+		return message.channel.send(`***Bubby online on ${client.guilds.cache.size} server***`);
 	} 
-    
-    if (command === 'kba') {
-        client.commands.get('kba').execute(message, args, Discord);
-    }
-
    
 });
 
