@@ -12,7 +12,6 @@ module.exports = {
             {name: 'Online', value: `${client.guild.cache.size}`},
             {name: 'Prefix', value: 'b!'},
             {name: 'Help', value: 'b!help'},
-            {name: 'Support server', value: 'https://discord.gg/Rgcfqdkbxn'},
         )
         .setFooter('Bot created by: Bencee#7253');
 
