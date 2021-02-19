@@ -7,7 +7,7 @@ module.exports = {
         .setTitle('General Help')
         .setDescription('All the help you may need.')
         .addFields(
-            {name: 'Serverinfo', value: 'Type: serverinfo'},
+            {name: 'Serverinfo', value: 'Type: b!serverinfo'},
         )
         .setFooter('Bot created by: Bencee#7253');
 

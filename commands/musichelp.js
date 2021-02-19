@@ -7,8 +7,8 @@ module.exports = {
         .setTitle('Music Help')
         .setDescription('All the help you may need.')
         .addFields(
-            {name: 'Play', value: 'Type: play songname or link'},
-            {name: 'Leave', value: 'Type: leave'},
+            {name: 'Play', value: 'Type: b!play songname or link'},
+            {name: 'Leave', value: 'Type: b!leave'},
             {name: 'Note', value: 'Bubby doesn’t quit when the music is over, she just send a message.'}
         )
         .setFooter('Bot created by: Bencee#7253');
