@@ -8,6 +8,7 @@ module.exports = {
         .setDescription('All the help you may need.')
         .addFields(
             {name: 'Serverinfo', value: 'Type: b!serverinfo'},
+            {name: 'Servers', value: 'b!servers'}
         )
         .setFooter('Bot created by: Bencee#7253');
 
