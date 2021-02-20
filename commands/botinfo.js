@@ -9,7 +9,8 @@ module.exports = {
         .addFields(
             {name: 'Owner', value: '@Bencee#7253'},
             {name: 'Help', value: 'Type: b!help'},
-            {name: 'Prefix', value: 'b!'}
+            {name: 'Prefix', value: 'b!'},
+            {name: 'Ping', value: `${Date.now() - message.createdTimestamp}ms`}
         )
         .setFooter('Bot created by: Bencee#7253');
 
