@@ -5,6 +5,7 @@ const client = new Discord.Client();
 const prefix = 'b!';
 
 const fs = require('fs');
+const { CLIENT_RENEG_WINDOW } = require('tls');
 
 client.commands = new Discord.Collection();
 
@@ -39,14 +40,14 @@ client.on('message', message =>{
         client.commands.get('serverinfo').execute(message, args, Discord);
     } else if (command === 'generalhelp') {
         client.commands.get('generalhelp').execute(message, args, Discord);
+    } else if (command === 'botinfo') {
+        client.commands.get('botinfo').execute(message, args, Discord); 
     } else if (command === 'musichelp') {
         client.commands.get('musichelp').execute(message, args, Discord);
     } else if (command === 'servers') {
 		return message.channel.send(`***Bubby online on ${client.guilds.cache.size} servers***`);
-	} else if (command === 'botinfo') {
-        return commands.get('botinfo').execute(message, args, Discord);
-    }
-   
+	} 
+
 });
 
 client.login(process.env.BOT_TOKEN);
