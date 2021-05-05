@@ -46,7 +46,9 @@ client.on('message', message =>{
         client.commands.get('musichelp').execute(message, args, Discord);
     } else if (command === 'servers') {
 		return message.channel.send(`***Bubby online on ${client.guilds.cache.size} servers***`);
-	}
+	} else if (command === 'ticket') {
+        client.commands.get('ticket').execute(message, args, cmd, client, discord);
+    }
 
 
 });
