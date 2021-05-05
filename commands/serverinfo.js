@@ -15,5 +15,5 @@ module.exports = {
         .setFooter('Bot created by: Bencee#7253');
 
         message.channel.send(newEmbed);
-    }
+    } 
 }

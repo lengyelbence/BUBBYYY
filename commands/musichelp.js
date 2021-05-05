@@ -4,7 +4,7 @@ module.exports = {
     execute(message, args, Discord) {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#FFD7E4')
-        .setTitle('Music Help')
+        .setTitle('╔═══════ Music Help ═══════╗')
         .setDescription('All the help you may need.')
         .addFields(
             {name: 'Play', value: 'Type: b!play songname or link'},

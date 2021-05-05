@@ -4,7 +4,7 @@ module.exports = {
     execute(message, args, Discord) {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#FFD7E4')
-        .setTitle('General Help')
+        .setTitle('╔═══════ General Help ═══════╗')
         .setDescription('All the help you may need.')
         .addFields(
             {name: 'Serverinfo', value: 'Type: b!serverinfo'},
