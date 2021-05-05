@@ -4,7 +4,7 @@ module.exports = {
     execute(message, args, Discord) {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#FFD7E4')
-        .setTitle('Serverinfo')
+        .setTitle('╔═══════ Serverinfo ═══════╗')
         .setDescription('All information of the server.')
         .addFields(
             {name: 'Server name', value: `${message.guild.name}`},
